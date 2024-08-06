@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="$FLUTTER_BASE_HREF" />
+
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="description" content="A new Flutter project." />
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="ghar_ka_bazaar" />
+    <link rel="apple-touch-icon" href="icons/196.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icons/app_logo.jpeg" />
+
+    <title>Ghar ka Bazaar</title>
+    <link rel="manifest" href="manifest.json" />
+
+    <script>
+      const serviceWorkerVersion = null;
+    </script>
+    <script src="flutter.js" defer></script>
+  </head>
+
+  <body>
+    <script>
+      window.addEventListener("load", function (ev) {
+        // Download main.dart.js
+        _flutter.loader.loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+          onEntrypointLoaded: function (engineInitializer) {
+            engineInitializer.initializeEngine().then(function (appRunner) {
+              appRunner.runApp();
+            });
+          },
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      window.flutterWebRenderer = "html";
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase_storage.js"></script>
+    <script src="main.dart.js" type="application/javascript"></script>
+    <script type="module">
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "$FIREBASE_API_KEY",
+        authDomain: "$FIREBASE_AUTH_DOMAIN",
+        projectId: "$FIREBASE_PROJECT_ID",
+        storageBucket: "$FIREBASE_STORAGE_BUCKET",
+        messagingSenderId: "$FIREBASE_MESSAGING_SENDER_ID",
+        appId: "$FIREBASE_APP_ID",
+        measurementId: "$FIREBASE_MEASUREMENT_ID",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+  </body>
+</html>
