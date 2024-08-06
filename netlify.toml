@@ -1,0 +1,6 @@
+[build]
+  # Command to install Flutter and build web
+  command = "bash ./install_flutter.sh && flutter build web"
+
+  # Directory to publish built web assets
+  publish = "build/web"

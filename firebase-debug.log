@@ -1,0 +1,43 @@
+[debug] [2024-02-10T08:17:52.753Z] ----------------------------------------------------------------------
+[debug] [2024-02-10T08:17:52.757Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Waliullah\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-10T08:17:52.758Z] CLI Version:   13.2.1
+[debug] [2024-02-10T08:17:52.759Z] Platform:      win32
+[debug] [2024-02-10T08:17:52.759Z] Node Version:  v18.14.2
+[debug] [2024-02-10T08:17:52.762Z] Time:          Sat Feb 10 2024 13:47:52 GMT+0530 (India Standard Time)
+[debug] [2024-02-10T08:17:52.763Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-10T08:17:52.976Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-10T08:17:52.977Z] > authorizing via signed-in user (gharkabazar8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Wasifolder\gharkabazaradminapp\gharkabazaarnewadminpanel\gharkabazaaradminpanel
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-10T08:18:04.488Z] Using project from CLI flag: macstore-73d62
+[debug] [2024-02-10T08:18:04.497Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/macstore-73d62 [none]
+[debug] [2024-02-10T08:18:06.799Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/macstore-73d62 403
+[debug] [2024-02-10T08:18:06.800Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/macstore-73d62 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-02-10T08:18:06.801Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-02-10T08:18:07.523Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Waliullah\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Waliullah\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project macstore-73d62. Please make sure the project exists and your account has permission to access it.
