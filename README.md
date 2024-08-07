@@ -1,82 +1,98 @@
 # GharKaBazaar Admin Flutter Web
 
-GharKaBazaar Admin is a Flutter web application that allows administrators to manage products, buyers, orders, categories, banners, and more. This project leverages Firebase for backend services.
+GharKaBazaar Admin is a Flutter web application that provides an administrative interface for managing the GharKaBazaar e-commerce platform. The admin panel includes features such as viewing and managing products, buyers, categories, orders, uploading banners, and sending order notifications via email.
 
 ## Features
 
-- **Product Management**: View, add, and manage products.
-- **Buyer Management**: View and manage buyers.
-- **Order Management**: View and manage orders.
-- **Category Management**: View and manage product categories.
-- **Banner Management**: Upload and manage promotional banners.
-- **Responsive UI**: Optimized for various screen sizes.
+1. **Product Management**
 
-## Screenshots
+   - View and manage all products.
+   - Upload new products.
 
-Screenshots will be added here
+2. **Buyers Management**
 
-## Getting Started
+   - View all registered buyers.
+   - Ban buyers.
+   - View orders placed by buyers.
 
-Follow these instructions to set up the project on your local machine for development and testing purposes.
+3. **Category Management**
 
-### Prerequisites
+   - View all categories.
+   - Create new categories.
 
-- Flutter SDK: [Installation Guide](https://flutter.dev/docs/get-started/install)
-- Firebase Account: [Sign Up](https://firebase.google.com/)
+4. **Order Management**
 
-### Installation
+   - View all orders.
+   - Search orders.
+   - View order details.
+   - Send email notifications for orders.
 
-1. **Clone the repository**:
+5. **Banner Management**
 
-   ```bash
+   - Upload and manage promotional banners.
+
+6. **Responsive UI**
+   - The admin panel is designed to be responsive and user-friendly.
+
+## Installation
+
+1. **Clone the repository**
+
+   ```sh
    git clone https://github.com/Rahilsamani/gharKaBazaar-Admin.git
    cd gharKaBazaar-Admin
    ```
 
-2. **Install dependencies**:
+2. **Install dependencies**
 
-   ```bash
+   ```sh
    flutter pub get
    ```
 
-3. **Set up Firebase**:
+3. **Set up Firebase**
 
-   - Go to the Firebase Console.
-   - Create a new project.
-   - Add a web app to your project and copy the Firebase configuration.
-   - Create a `.env` file in the root of the project and add your Firebase configuration:
+   - Create a Firebase project if you don't have one.
+   - Add your Firebase configuration to the `.env` file.
 
-4. **Run the application**:
+4. **Run the application**
 
-   ```bash
+   ```sh
    flutter run -d chrome
    ```
 
-## Project Structure
+## Usage
 
-- **lib**
-  - **provider**: Contains providers for state management.
-  - **views/screens**: Contains the screen widgets for the application.
-  - **views/screens/inner_screens**: Contains inner screen widgets.
-  - **views/screens/inner_screens/widgets**: Contains reusable widgets.
+### Product Management
 
-## Dependencies
+- **All Products**: View the list of all products in the inventory.
+- **Add Products**: Upload new products to the platform.
 
-- `firebase_core`
-- `provider`
-- `flutter_admin_scaffold`
-- `cupertino_icons`
+### Buyers Management
+
+- **Buyers**: View all registered buyers, ban users, and view their orders.
+
+### Category Management
+
+- **Categories**: View all existing categories and create new ones.
+
+### Order Management
+
+- **Orders**: View all orders, search through them, and see detailed information.
+- **Order Notification**: Automatically send email notifications to buyers upon order updates.
+
+### Banner Management
+
+- **Upload Banner**: Upload promotional banners for the website.
 
 ## Contributing
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Create a new Pull Request.
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-## Acknowledgments
+## Acknowledgements
 
-- Thanks to the Flutter community for the amazing resources and support.
-- Firebase for the robust backend services.
+- Flutter
+- Firebase
+- Provider package
+- Admin Scaffold package
+
 
